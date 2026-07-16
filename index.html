@@ -1154,4 +1154,60 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH94P0:END-->
+<!--WY-BH94P1:BEGIN-->
+<style id="wy-bh94p1-css">
+.bh94p1-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh94p1-fabbox.show{display:block;}
+.bh94p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh94p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh94p1-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh94p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh94p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh94p1-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh94p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh94p1-modal.open{display:flex;}
+.bh94p1-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh94p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh94p1-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh94p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh94p1-close:hover{background:#dde2e6;}
+.bh94p1-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh94p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh94p1-tbl th,.bh94p1-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh94p1-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh94p1-tbl thead th:nth-child(1){width:32%;}.bh94p1-tbl thead th:nth-child(2){width:41%;}.bh94p1-tbl thead th:nth-child(3){width:27%;}
+.bh94p1-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh94p1-guan{background:#eef2f5;color:#37505f;}
+.bh94p1-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh94p1-tbl tbody tr:nth-child(even) td.bh94p1-guan{background:#e8eef2;}
+.bh94p1-tbl b{color:#8b2500;}
+.bh94p1-guan b{color:#2f6b5a;}
+.bh94p1-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh94p1-note b{color:#8b2500;}
+@media(max-width:900px){.bh94p1-fabbox{right:14px;}.bh94p1-tbl{font-size:11px;}.bh94p1-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh94p1-fabbox" id="bh94p1Box"><button class="bh94p1-btn" id="bh94p1Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh94p1-ic">譯</span><span class="bh94p1-ls"><span class="bh94p1-l1">本品 · 原文·白話·中觀</span><span class="bh94p1-l2">白話翻譯表</span></span></button></div><div class="bh94p1-modal" id="bh94p1Modal" role="dialog" aria-modal="true"><div class="bh94p1-card"><button class="bh94p1-close" id="bh94p1Close" type="button" aria-label="關閉">×</button><h3>第1品 · 釋畢定品第八十三之餘（二）論釋覆按‧遊戲神通與空慧不著 · 原典 原文↔白話↔中觀 翻譯表</h3><p class="sub">《大智度論》卷九十四 · 釋畢定品第八十三之餘（二）論釋覆按‧遊戲神通與空慧不著 · 經文原典全覽（十五段：佛身國土分論之由·空無偏頗釋義·肉眼求天眼·白鷺捕魚喻·天眼見善法問答·善根有為鏈式推理·蠅著火焰喻·般若自空·父子主奴不染喻·遊戲定義問答·三三昧空為上行）· 原文↔白話↔中觀概念 逐段對照</p><table class="bh94p1-tbl"><caption>《大智度論》卷94‧釋畢定品第八十三之餘（二）論釋覆按‧遊戲神通與空慧不著‧經文原典‧原文｜白話翻譯｜中觀概念（共15段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh94p1-src">佛以無量阿僧祇實功德得是身，能以一足指動十方如恒河沙國土；又菩薩世世來深愛重佛，不能疾觀使空，是故不共國土合說。</td><td>佛是憑藉無量阿僧祇劫積累的真實功德才證得這樣的（金剛不壞）身，能以一根腳趾就震動十方如恒河沙數的國土；而菩薩生生世世以來對佛懷有深厚的愛敬之心，還不能迅速地將這份愛敬觀空，所以（論主）不將「國土」與「佛」合在一起討論（空義）。</td><td class="bh94p1-guan"><b>佛身與國土分開論說的緣由</b>——論主特別說明：經文之所以先單說「國土空」再論及「諸佛亦空」，是因為眾生（乃至菩薩）對佛懷有深厚的愛敬之心，難以像觀空國土那樣迅速地將「佛」也一併觀空；這一分開處理，體現論主教學上循循善誘、照顧眾生根機的用心。</td></tr><tr><td class="bh94p1-src">若十方國土及諸佛不空者，空為有偏。有偏名有空、不空處。今實不偏，故一切法、一切法相空。</td><td>假使十方國土以及諸佛不是空的，那麼「空」的道理就有所偏頗了。所謂「有偏」，就是指有的地方空、有的地方不空。而如今空的道理其實毫無偏頗，所以一切法、一切法的相狀都是空的。</td><td class="bh94p1-guan"><b>「有偏」的定義‧空義必須無所遺漏</b>——論主在此明確界定「有偏」一詞的意涵：空若只適用於部分對象（有空、有不空之處），便不是徹底的空。這一句補充解釋了品0經文「空為有偏」的具體所指，強化「一切法、一切法相空」必須毫無例外，方為畢竟空。</td></tr><tr><td class="bh94p1-src">菩薩行般若波羅蜜，一切法無礙；以肉眼觀色不通：見上、不見下，見前、不見後，通見、障不見，晝見、夜不見；知肉眼力少故，以方便更求天眼。</td><td>菩薩修行般若波羅蜜，對一切法都能通達無礙；但若只用肉眼觀看色法，則有所不通：看得見上方就看不見下方，看得見前面就看不見後面，沒有遮蔽處能看見、有遮蔽處就看不見，白天看得見、夜晚就看不見。菩薩了知肉眼的能力有限，所以運用方便之力，進一步追求天眼通。</td><td class="bh94p1-guan"><b>肉眼之限與天眼之求</b>——這段補充說明品0「以方便力求天眼」的具體理由：肉眼受限於方向、障礙物、晝夜等條件，見聞覺知處處有礙，與般若「一切法無礙」的境界形成對比，說明神通（天眼）的追求，正是為了彌補肉眼認知範圍的局限，以更周遍地饒益眾生。</td></tr><tr><td class="bh94p1-src">方便力者，令他界四大來在身中。用天眼義，如先說。生天耳、如意足、他心智、宿命智，知眾生生死所趣等。</td><td>所謂「方便力」，是指能使其他世界的地水火風四大元素，聚合到自己身中（而化現種種身形）。至於運用天眼的意義，如同前面所說的一樣。菩薩並生起天耳通、如意足通、他心智、宿命智，藉此了知眾生生死流轉所趨向之處等等。</td><td class="bh94p1-guan"><b>方便力的具體定義‧四大聚合化身</b>——論主為「方便力」一詞給出具體的操作性定義：不是抽象的能力，而是能調動他方世界的四大元素、聚合於自身而化現種種身形的能力，這使「方便不染」的討論從抽象哲理落實為具體的神通運作機制。</td></tr><tr><td class="bh94p1-src">譬如白鷺欲取魚時，籌量進止，不失期會，知其可得，即便取之，終不空也。菩薩亦如是，以神通力故，觀眾生本末，應度因緣、國土、時節，知其信等諸根增利、諸因緣具足而為說法，則不空也。</td><td>譬如白鷺想要捕魚的時候，會先仔細衡量進退的時機，把握恰當的時刻，一旦判斷可以捕獲，便立即出擊，從不會撲空。菩薩也是如此，憑藉神通之力，觀察眾生的根本與始末，衡量應當度化的因緣、所在的國土、恰當的時節，了知眾生的信心等善根是否已經增長成熟、種種因緣是否已經具足，才為他們說法，因此說法從不會落空。</td><td class="bh94p1-guan"><b>白鷺捕魚喻‧神通作為精準契機的判斷力</b>——這一生動譬喻補充說明神通在說法度眾上的實際功用：不是漫無目的地施展，而是像白鷺捕魚一樣精準判斷時機因緣，唯有因緣具足才出手說法，確保度化「不空」（不落空、必有實效），呼應品0「隨機說法」的精神，並使抽象的「神通妙用」有了具體可感的畫面。</td></tr><tr><td class="bh94p1-src">天眼可見色，云何見善法？又言見一切法性空？</td><td>天眼所能照見的應該是形色（物質現象），為什麼又說天眼能見到「善法」？甚至還說能見到一切法的自性空呢？</td><td class="bh94p1-guan"><b>天眼所見範圍之問</b>——這是一個精細的詰問：天眼通按理只能照見物質性的色法，為何前文卻說天眼能「見諸善法」，甚至能照見一切法的空性？這觸及神通（有為的認知能力）與智慧（無為的空性照見）之間的分際問題。</td></tr><tr><td class="bh94p1-src">因中說果。以天眼見，自見己身及見十方眾生，然後用他心智、宿命智求其今世、後世善根；是善根及果報，久皆磨滅，磨滅故見空。</td><td>這是「以因說果」的表達方式。菩薩先運用天眼，照見自身以及十方眾生的色身，然後再運用他心智、宿命智，探求眾生今生與後世的善根；而這些善根與其果報，經過長久時間終究都會消逝磨滅，正因為會磨滅，所以才說（天眼）照見了「空」。</td><td class="bh94p1-guan"><b>以因說果‧天眼見空的解釋</b>——論主巧妙化解了上一問的表面矛盾：天眼本身直接照見的是色身（因），但透過天眼所見的色身進一步聯繫他心智、宿命智所探知的善根果報，因其終將磨滅無常，故說「見空」——這是一種因果連鎖式的照見，而非天眼直接照見抽象的空性本身。</td></tr><tr><td class="bh94p1-src">是善根皆是有為法、無自性，無自性故空，空故不可著，亦不可受味，不可受味故不著。</td><td>這些善根全都屬於有為法，沒有真實不變的自性；正因為沒有自性，所以是空的；正因為是空的，所以不可執著，也不會讓人嘗到（貪愛的）滋味；正因為不會讓人嘗到滋味，所以才不會被執著。</td><td class="bh94p1-guan"><b>有為法鏈式推理‧從無自性到不可著</b>——這段以清晰的鏈式推理（有為→無自性→空→不可著→不受味→不著）層層推演，說明善法雖是修行必需，但其本質仍是有為、無自性、空，因此連善法本身也不成為貪著的對象，呼應品0「於善法亦不著」之說。</td></tr><tr><td class="bh94p1-src">譬如蠅無處不著，唯不著火焰。眾生愛著亦如是，善、不善法中皆著，乃至非有想非無想著故，不能入涅槃；唯不能著般若波羅蜜性空火。</td><td>譬如蒼蠅沒有什麼地方不能停留附著的，唯獨無法停留在熾熱的火焰之上。眾生的貪愛執著也是同樣的道理：無論是善法或不善法之中，都會生起執著，乃至對「非有想非無想」這樣幽微的禪定境界也會執著，因此無法證入涅槃；唯獨無法執著於般若波羅蜜這樣自性空的智慧之火。</td><td class="bh94p1-guan"><b>蒼蠅火焰喻‧般若空慧是唯一不可著處</b>——這是全段最精采的譬喻：蒼蠅無所不棲，卻獨獨不能停在火焰上；眾生的貪著同樣無孔不入，連最幽微的非有想非無想定都能生執著，卻唯獨無法執著於畢竟空的般若智慧——因為「空」中根本沒有可供攀附的立足點，這正是般若波羅蜜作為究竟解脫道的獨特之處。</td></tr><tr><td class="bh94p1-src">般若波羅蜜、般若波羅蜜相空；若般若波羅蜜不空，即是味，是可著處。</td><td>般若波羅蜜本身，以及般若波羅蜜的相狀，都是空的；假使般若波羅蜜不是空的，那它就會成為一種（可貪愛的）滋味，也就成了可以被執著的對象了。</td><td class="bh94p1-guan"><b>般若自身亦空‧防止以智慧為所得</b>——承接上一喻，論主進一步強調：連般若波羅蜜自身及其相狀也是空的；假使般若不空，它便會淪為新的貪著對象，這正呼應品0「無所得空般若波羅蜜」的道理——般若之所以能作為究竟依止，正因為它連自身也不可得、不可執著。</td></tr><tr><td class="bh94p1-src">是菩薩於眾生中，或為父、或為子，或為師、或為弟子，或為主、或為奴……或時富貴力勢、或時貧賤——於此諸事，亦不為染污。樂中不生愛，苦中不生瞋；不如生死眾生隨處起煩惱。</td><td>這位菩薩在眾生之中，有時示現為父親、有時示現為兒子，有時示現為老師、有時示現為弟子，有時示現為主人、有時示現為僕役……有時示現富貴而有權勢，有時示現貧窮卑賤——在這種種身份角色之中，菩薩也不會被染污。處於安樂之中不生起貪愛，處於痛苦之中不生起瞋恨；不像一般在生死中流轉的眾生那樣，隨處生起煩惱。</td><td class="bh94p1-guan"><b>角色扮演而不染‧貴賤苦樂皆平等</b>——這段將「方便不染」的道理落實到最貼近人間的社會身份之中：父子、師徒、主僕、貴賤，菩薩隨緣示現一切角色，卻在樂中不貪、苦中不瞋，與凡夫隨境界起煩惱形成鮮明對比，具體示範了「譬如佛所化人，作一切事，苦樂不染」的深意。</td></tr><tr><td class="bh94p1-src">菩薩神通力有所作，何以名遊戲？</td><td>菩薩的神通之力既然是有所作為（做具體的事），為什麼要稱之為「遊戲」呢？</td><td class="bh94p1-guan"><b>「遊戲」一詞的表面矛盾</b>——「遊戲」給人的印象是輕鬆自在、無所事事，但神通卻是「有所作」的具體行動，二者字面上似乎矛盾，此問直指這個用詞的張力。</td></tr><tr><td class="bh94p1-src">戲名如幻師種種現變；菩薩神通種種現化，名之為戲。</td><td>「戲」，指的就像幻術師能變現出種種幻象一樣；菩薩運用神通變現出種種化身，也是同樣的道理，所以稱之為「遊戲」。</td><td class="bh94p1-guan"><b>如幻師現變‧遊戲即是如幻自在</b>——論主以「幻師變現」精準定義「遊戲」的內涵：不是隨便嬉戲，而是像幻術師深知所變一切皆非實有、故能自在變現一般，菩薩深知神通所現一切身相皆如幻不實，故能自在示現而不受拘束、不生執著，這正是「遊戲」二字的真義。</td></tr><tr><td class="bh94p1-src">佛法中三三昧，空名為上行。何以故？似如涅槃無所著、無所得故。諸餘行法，皆名為下下，如小兒。</td><td>在佛法之中，空、無相、無作三三昧裡，「空三昧」被稱為最殊勝的修行。為什麼呢？因為它最相似於涅槃那樣無所執著、無所得的境界。至於其餘的修行法門，相較之下都稱為層次較低的，就好比幼小的孩童一般（尚未成熟）。</td><td class="bh94p1-guan"><b>三三昧中空為上行‧貼近涅槃的修證位階</b>——論主在此為三解脫門（空、無相、無作）排出修證的層次，指出「空」三昧最為殊勝，因其最貼近涅槃無所著、無所得的體性；其餘法門則相對粗淺，如同孩童之學，凸顯「空」在整個修行體系中至高無上的地位。</td></tr><tr><td class="bh94p1-src">是故說神通力名為遊戲，於成就眾生、淨佛土中，最為要用。</td><td>所以說，菩薩的神通之力被稱為「遊戲」，在成就眾生、莊嚴清淨佛土的事業之中，是最為重要、不可或缺的作用。</td><td class="bh94p1-guan"><b>總結‧遊戲神通是淨土成就的關鍵樞紐</b>——這是本段對「遊戲神通」主題的總結句，將神通的「遊戲」性格（如幻自在）與「成就眾生、淨佛國土」的具體事功緊密扣合，呼應品0「應如是遊戲神通，能淨佛國土、成就眾生」的結論，完整收束品1對神通義理的補充論述。</td></tr></tbody></table><p class="bh94p1-note">本表為卷九十四第1品「論釋覆按‧遊戲神通與空慧不著」（承續第0品經文，補充論主逐句解析與譬喻）之原文‧白話‧中觀三欄逐段對照，白話忠於原意、不增不減。　中觀關鍵詞：空無偏頗　天眼與肉眼之限　白鷺捕魚喻　蠅著火焰喻　般若自空不可著　如幻遊戲神通　三三昧空為上行　淨土成就樞紐</p></div></div>
+<script id="wy-bh94p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh94p1Btn"),BOX=document.getElementById("bh94p1Box"),MODAL=document.getElementById("bh94p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+var CBOX=document.getElementById("c94p2Box");
+function place(){
+  var b=null;
+  if(CBOX){var st=getComputedStyle(CBOX);var r=CBOX.getBoundingClientRect();if(st.position==="fixed"&&r.height>0&&st.display!=="none")b=Math.round(window.innerHeight-r.top)+8;}
+  if(b===null){var eb=document.querySelector(".wy-ebox");if(eb){var er=eb.getBoundingClientRect();if(er.height>4)b=Math.round(window.innerHeight-er.top)+8;}}
+  if(b===null)b=150;
+  BOX.style.bottom=b+"px"; /*BHPLACE*/
+}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh94p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH94P1:END-->
 </body></html>
