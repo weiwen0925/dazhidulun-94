@@ -870,7 +870,7 @@ else window.addEventListener('load',function(){setTimeout(bhGo,200);});
 <!--WY-GOTO:END-->
 
 <!--WY-BHAUIX:BEGIN-->
-<style id="wy-bha-uix">/* bha-uix-v4 */
+<style id="wy-bha-uix">/* bha-uix-v5 */
 .wy-bhx{--bhfs:17px;}
 .wy-bhx table{font-size:var(--bhfs)!important;line-height:1.92;}
 .wy-bhx th,.wy-bhx td{padding:14px 16px!important;vertical-align:top;}
@@ -888,6 +888,13 @@ else window.addEventListener('load',function(){setTimeout(bhGo,200);});
 .wy-bhx.wy-m3 th:nth-child(3),.wy-bhx.wy-m3 td:nth-child(3){width:35%;}
 .wy-bhx.wy-m2 th:nth-child(3),.wy-bhx.wy-m2 td:nth-child(3){display:none;}
 .wy-bhx.wy-m2 th:nth-child(1),.wy-bhx.wy-m2 td:nth-child(1){width:42%;}
+.wy-bhx.wy-m4 th:nth-child(1),.wy-bhx.wy-m4 td:nth-child(1){display:none;}
+.wy-bhx.wy-m4 th:nth-child(2),.wy-bhx.wy-m4 td:nth-child(2){width:52%;}
+.wy-bhx.wy-m4 th:nth-child(3),.wy-bhx.wy-m4 td:nth-child(3){width:48%;}
+.wy-bhx.wy-m5 th:nth-child(2),.wy-bhx.wy-m5 td:nth-child(2){display:none;}
+.wy-bhx.wy-m5 th:nth-child(1),.wy-bhx.wy-m5 td:nth-child(1){width:52%;}
+.wy-bhx.wy-m5 th:nth-child(3),.wy-bhx.wy-m5 td:nth-child(3){width:48%;}
+.wy-bhx tbody td:nth-child(3){font-size:calc(var(--bhfs)*.94)!important;line-height:1.9!important;}
 .wy-bhx.wy-m1 table,.wy-bhx.wy-m1 tbody,.wy-bhx.wy-m1 tr,.wy-bhx.wy-m1 td{display:block;width:auto!important;}
 .wy-bhx.wy-m1 thead{display:none;}
 .wy-bhx caption{caption-side:top;text-align:left;}
@@ -946,7 +953,7 @@ var KF="wyBhaFs",KM="wyBhaMode",KD="wyBhaDark",KO="wyBhaFocus";
 function g(k,d){try{return localStorage.getItem(k)||d;}catch(e){return d;}}
 function st(k,v){try{localStorage.setItem(k,v);}catch(e){}}
 function fs(){var v=parseInt(g(KF,"17"),10);if(isNaN(v))v=17;return Math.min(22,Math.max(14,v));}
-function md(){var m=g(KM,"3");return(m==="1"||m==="2")?m:"3";}
+function md(){var m=g(KM,"3");return(m==="1"||m==="2"||m==="4"||m==="5")?m:"3";}
 function kwify(card){
   var ns=card.querySelectorAll(".bha-note:not([data-wykw])");
   for(var i=0;i<ns.length;i++){
@@ -966,7 +973,7 @@ function bar(card){
   if(b)return b;
   b=document.createElement("div");b.className="wy-bhbar";
   b.innerHTML='<button data-a="f-" title="縮小字級">A−</button><button data-a="f+" title="放大字級">A＋</button><span class="gp"></span>'
-    +'<button data-a="m3">三欄對照</button><button data-a="m2">原文＋白話</button><button data-a="m1">逐段直列</button><span class="gp"></span>'
+    +'<button data-a="m3">三欄對照</button><button data-a="m2">原文＋白話</button><button data-a="m4">白話＋中觀</button><button data-a="m5">原文＋中觀</button><button data-a="m1">逐段直列</button><span class="gp"></span>'
     +'<button data-a="fo" title="淡化其餘，只突出螢光重點">只看重點</button><button data-a="dk" title="深色閱讀">夜間</button>';
   var cl=card.querySelector("button[id$=Close],button[class*=close],button[class*=-close]");
   card.insertBefore(b,cl&&cl.nextSibling?cl.nextSibling:card.firstChild);
@@ -985,7 +992,7 @@ function bar(card){
 function apply(card){
   if(!card.querySelector("table"))return;
   card.classList.add("wy-bhx");
-  card.classList.remove("wy-m1","wy-m2","wy-m3");
+  card.classList.remove("wy-m1","wy-m2","wy-m3","wy-m4","wy-m5");
   card.classList.add("wy-m"+md());
   card.classList.toggle("wy-dark",g(KD,"0")==="1");
   card.classList.toggle("wy-focus",g(KO,"0")==="1");
